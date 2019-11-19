@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel = "stylesheet" href = "https://use.typekit.net/klo3oao.css">
+    <title>grid2</title>
+    <style type="text/css">
+        :root{
+            --blau1:#E3F2FD;
+            --blau2:#BBDEFB;
+            --blau3:#90CAF9;
+            --blau4:#64B5F6;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            /*background: var(--blau4);*/
+            font-family: rubik, sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(4, 400px);
+        }
+        img{
+            width: 100%;
+            height: 100vh;
+        }
+        .expo{
+            /*padding: 1em;*/
+        }
+        .expo img{
+            object-fit: cover;
+            object-position: center center;
+            height: 100%;
+        }
+        .ex1, .ex4, .ex5, ex8{
+            display: flex;
+            flex-direction: column;
+            grid-column: span 2;
+            padding: 2em 3em;
+        }
+        .ex2, .ex3, .ex6, .ex7{
+            grid-column: span 3;
+        }
+        .ex1{
+            background: var(--blau1);
+        }
+        .ex4{
+            background: var(--blau2);
+        }
+        .ex5{
+            background: var(--blau3);
+        }
+        .ex8{
+            background: var(--blau4);
+            grid-column: span 2;
+            display: flex;
+            flex-direction: column;
+            padding: 2em 3em;
+        }
+        h1{
+            font-size: 2.5em;
+            line-height: 0.97em;
+            flex-grow: 1;
+        }
+        h2{
+            font-weight: 300;
+           font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="expo ex1">
+            <h1>Cartografías Urbanas</h1>
+            <h2>Este eje tiene la pretensión de estructurar tanto el conjunto de obras que desde el inicio de la Modernidad a principios del siglo XX hasta la actualidad posee la colección del IVAM, como profundizar en el gran número de artistas que en la actualidad están trabajando sobre el mismo tema. Se trata de las aportaciones que, desde la fotografía, la la pintura, la escultura o el video se han acercado al espacio urbano o al debate sobre la relación entre el espacio público y privado como centro neurálgico de las diferentes prácticas artísticas y sociales. Ahí está el caso de, por ejemplo, César Domela, Paul Citroen, George Grosz, Horacio Coppola, William Klein, Lee Friedlander, Gordon Matta Clark, Guillermo Kuitca, Gabriele Basilico, Hannsjörg Voth, Marjetica Potrc o el valenciano Miquel Navarro.</h2>
+        </div>
+        <div class="expo ex2">
+            <img src="img/cartografias.jpg" alt="cartografias">
+        </div>
+        <div class="expo ex3">
+            <img src="img/contemporaniedades.jpg" alt="contemporaneidades">
+        </div>
+        <div class="expo ex4">
+            <h1>Contemporaneidades <br> 1980-2010</h1>
+            <h2>Un conjunto de artistas llevan años trabajando con dispositivos tecnológicos en analizar de qué modo la revolución digital es un hecho que está presente en nuestra vida cotidiana y altera considerablemente nuestra relación con el mundo o de qué forma nos abrimos hacia las nuevas creaciones on –line que están alterando nuestra perspectiva de la realidad. En la colección tenemos algunos ejemplos, desde los pioneros como Dara Birnbaum, Gary Hill o Antoni Muntadas, hasta Joan Fontcuberta, Dionisio González, José Antonio Orts…</h2>
+        </div>
+        <div class="expo ex5">
+            <h1>La realidad y sus crónicas</h1>
+            <h2>Un amplio conjunto de artistas que tienen en común una mirada irónica, al tiempo que crítica sobre la realidad que nos envuelve. Este eje de la colección del IVAM se iniciaría en los años treinta con los fotomontajes de John Heartfield, George Grosz o del valenciano Josep Renau. Continuaría con las obras de los años sesenta y setenta del Pop Art europeo y americano de Richard Hamilton, Öyvind Fahlström, Sigmar Polke, Martial Raysse o James Rosenquist; las aportaciones españolas de Eduardo Arroyo y también de la llamada figuración madrileña y, muy especialmente, la contribución del arte realizado desde la Comunidad Valenciana que va desde el Equipo Realidad, Equipo Crónica, Anzo o Juan Genovés, hasta determinadas aportaciones pictóricas contemporáneas. Este eje se extendería hasta incluir la denominada Nueva Escuela Valenciana del Cómic, desde Daniel Torres a Paco Roca.</h2>
+        </div>
+        <div class="expo ex6">
+            <img src="img/realidad.jpg" alt="realidad">
+        </div>
+        <div class="expo ex7">
+            <img src="img/poetica.jpg" alt="poéticas">
+        </div>
+        <div class="expo ex8">
+            <h1>Poéticas Oníricas y Dadá</h1>
+            <h2>Incluye el conjunto de obras, especialmente en papel, collage y fotografía, que el IVAM posee de artistas dadaístas y surrealistas. Entre los más destacados estarían Kurt Schwitters, Raoul Hausmann, Marcel Duchamp, Man Ray, André Kertész, Óscar Domínguez, Benjamín Palencia, Grete Stern. Hay además un conjunto de artistas contemporanéos cuyas obras estarían vinculadas a estas poéticas citadas, pero que se entremezclan con otras formulaciones estéticas, es el caso de Henri Michaux, Luis Gordillo, Fischli  &amp; amp;Weiss o los valencianos Vicente Martínez Sanz y Carmen Calvo, que a pesar de la distancia cronológica comparten intereses similares en distintas obras.</h2>
+        </div>
+    </div>
+</body>
+</html>
